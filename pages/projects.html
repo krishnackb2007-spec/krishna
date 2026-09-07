@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>KRISHNA // PROJECTS</title>
+
+  <link
+    rel="stylesheet"
+    href="../style.css"
+  >
+
+</head>
+
+
+<body>
+
+  <!-- =====================================================
+       MATRIX BACKGROUND
+       ===================================================== -->
+
+  <canvas id="matrixCanvas"></canvas>
+
+
+  <!-- =====================================================
+       TOP NAVIGATION
+       ===================================================== -->
+
+  <header class="topbar">
+
+    <div class="logo">
+      KRISHNA // SYSTEM
+    </div>
+
+    <nav class="nav">
+
+      <a href="../index.html">
+        HOME
+      </a>
+
+      <a href="about.html">
+        ABOUT
+      </a>
+
+      <a href="skills.html">
+        SKILLS
+      </a>
+
+      <a
+        href="projects.html"
+        class="active"
+      >
+        PROJECTS
+      </a>
+
+      <a href="terminal.html">
+        TERMINAL
+      </a>
+
+      <a href="contact.html">
+        CONTACT
+      </a>
+
+    </nav>
+
+
+    <div class="clock">
+      00:00:00
+    </div>
+
+
+    <button
+      class="menu-toggle"
+      type="button"
+    >
+      ☰
+    </button>
+
+  </header>
+
+
+
+  <!-- =====================================================
+       DANGER MODE
+       ===================================================== -->
+
+  <button
+    class="danger-button"
+    id="dangerButton"
+    type="button"
+  >
+
+    <span>
+      ⚠ DANGER MODE
+    </span>
+
+    <small>
+      ● OFF
+    </small>
+
+  </button>
+
+
+  <div
+    id="dangerOverlay"
+    aria-hidden="true"
+  ></div>
+
+
+  <div
+    id="dangerFlash"
+    aria-hidden="true"
+  ></div>
+
+
+
+  <!-- =====================================================
+       PROJECT HERO
+       ===================================================== -->
+
+  <section
+    class="hero project-hero"
+    id="projectHero"
+  >
+
+    <div class="hero-grid"></div>
+
+
+    <!-- LEFT HUD -->
+
+    <div class="hero-side left">
+
+      <div class="hud-panel">
+
+        <div class="hud-title">
+          MISSION CONTROL
+        </div>
+
+        <div class="hud-line">
+          STATUS
+          <strong>ONLINE</strong>
+        </div>
+
+        <div class="hud-line">
+          MISSIONS
+          <strong>03</strong>
+        </div>
+
+        <div class="hud-line">
+          YEAR
+          <strong>2026</strong>
+        </div>
+
+        <div class="hud-line">
+          MODE
+          <strong>BUILD</strong>
+        </div>
+
+      </div>
+
+
+      <div class="hud-panel">
+
+        <div class="hud-title">
+          SYSTEM FOCUS
+        </div>
+
+        <div class="hud-line">
+          WEB DEVELOPMENT
+        </div>
+
+        <div class="hud-line">
+          PROGRAMMING
+        </div>
+
+        <div class="hud-line">
+          DATABASE
+        </div>
+
+        <div class="hud-line">
+          EXPERIMENTATION
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- MAIN HERO -->
+
+    <div class="hero-content">
+
+      <div class="breach-text">
+        PROJECT DATABASE // ACCESS GRANTED
+      </div>
+
+      <div class="welcome-small">
+        CLASSIFIED // MISSION FILES
+      </div>
+
+      <h1 class="welcome-title">
+        PROJECTS
+      </h1>
+
+      <div class="hero-tagline">
+        BUILD. TEST. DEBUG. EVOLVE.
+      </div>
+
+
+      <div class="krishna-box">
+
+        <span>
+          DEVELOPER // KRISHNA
+        </span>
+
+        <strong>
+          MISSION CONTROL
+        </strong>
+
+      </div>
+
+
+      <div class="initializing">
+        &gt; LOADING PROJECT DATABASE...
+      </div>
+
+
+      <div class="hero-terminal">
+
+        <div>
+          &gt; SCANNING LOCAL PROJECT FILES...
+        </div>
+
+        <div>
+          &gt; 03 MISSION RECORDS FOUND
+        </div>
+
+        <div>
+          &gt; DEVELOPMENT MODE: ACTIVE
+        </div>
+
+        <div>
+          &gt; ACCESS LEVEL: AUTHORIZED
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- RIGHT HUD -->
+
+    <div class="hero-side right">
+
+      <div class="hud-panel danger-panel">
+
+        <div class="hud-title">
+          MISSION WARNING
+        </div>
+
+        <div class="hud-line">
+          DO NOT STOP
+        </div>
+
+        <div class="hud-line">
+          KEEP BUILDING
+        </div>
+
+      </div>
+
+
+      <div class="hud-panel">
+
+        <div class="hud-title">
+          CURRENT TARGET
+        </div>
+
+        <div class="hud-line">
+          REAL PROJECTS
+        </div>
+
+        <div class="hud-line">
+          REAL LEARNING
+        </div>
+
+        <div class="hud-line">
+          REAL PROGRESS
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       01 — PROJECT COMMAND CENTER
+       ===================================================== -->
+
+  <section
+    id="missions"
+    class="reveal"
+  >
+
+    <div class="section-container">
+
+
+      <div class="section-header">
+
+        <div class="section-number">
+          [ 01 ] // MISSIONS
+        </div>
+
+        <h2 class="section-title">
+          PROJECT COMMAND CENTER
+        </h2>
+
+        <div class="section-subtitle">
+          ACTIVE DEVELOPMENT // 2026
+        </div>
+
+      </div>
+
+
+
+      <div class="projects-grid">
+
+
+
+        <!-- =================================================
+             PROJECT 01
+             ================================================= -->
+
+        <article
+          class="project-card mission-card"
+          data-status="BUILDING"
+        >
+
+          <div class="project-top">
+
+            <span class="mission-number">
+              MISSION_001
+            </span>
+
+            <span class="mission-status">
+              ● BUILDING
+            </span>
+
+          </div>
+
+
+          <div class="project-icon">
+            &lt;/&gt;
+          </div>
+
+
+          <h3>
+            KRISHNA CYBER PORTFOLIO
+          </h3>
+
+
+          <div class="project-code">
+            WEB // PERSONAL SYSTEM
+          </div>
+
+
+          <div class="project-info">
+
+            <div>
+              <span>TYPE</span>
+              <strong>WEB DEVELOPMENT</strong>
+            </div>
+
+            <div>
+              <span>STACK</span>
+              <strong>HTML / CSS / JS</strong>
+            </div>
+
+            <div>
+              <span>YEAR</span>
+              <strong>2026</strong>
+            </div>
+
+            <div>
+              <span>STATUS</span>
+              <strong>ACTIVE BUILD</strong>
+            </div>
+
+          </div>
+
+
+          <div class="project-description">
+
+            <h4>
+              &gt; OBJECTIVE
+            </h4>
+
+            <p>
+              Build a personal developer portfolio with a
+              futuristic cyber command-center interface,
+              interactive sections and a strong visual identity.
+            </p>
+
+          </div>
+
+
+          <div class="project-features">
+
+            <span>
+              HUD UI
+            </span>
+
+            <span>
+              MATRIX EFFECT
+            </span>
+
+            <span>
+              RESPONSIVE
+            </span>
+
+            <span>
+              TERMINAL
+            </span>
+
+          </div>
+
+
+          <div class="project-footer">
+
+            <span>
+              FILE: MISSION_001
+            </span>
+
+            <a
+              href="../index.html"
+              class="project-button"
+            >
+              VIEW SYSTEM →
+            </a>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROJECT 02
+             ================================================= -->
+
+        <article
+          class="project-card mission-card"
+          data-status="EXPERIMENT"
+        >
+
+          <div class="project-top">
+
+            <span class="mission-number">
+              MISSION_002
+            </span>
+
+            <span class="mission-status">
+              ● EXPERIMENT
+            </span>
+
+          </div>
+
+
+          <div class="project-icon">
+            &gt;_
+          </div>
+
+
+          <h3>
+            CYBER TERMINAL
+          </h3>
+
+
+          <div class="project-code">
+            INTERACTIVE // COMMAND SYSTEM
+          </div>
+
+
+          <div class="project-info">
+
+            <div>
+              <span>TYPE</span>
+              <strong>INTERACTIVE UI</strong>
+            </div>
+
+            <div>
+              <span>STACK</span>
+              <strong>HTML / CSS / JS</strong>
+            </div>
+
+            <div>
+              <span>YEAR</span>
+              <strong>2026</strong>
+            </div>
+
+            <div>
+              <span>STATUS</span>
+              <strong>EXPERIMENT</strong>
+            </div>
+
+          </div>
+
+
+          <div class="project-description">
+
+            <h4>
+              &gt; OBJECTIVE
+            </h4>
+
+            <p>
+              Create a browser-based terminal interface where
+              visitors can interact with simulated commands,
+              system information and developer data.
+            </p>
+
+          </div>
+
+
+          <div class="project-features">
+
+            <span>
+              COMMANDS
+            </span>
+
+            <span>
+              FAKE LOGS
+            </span>
+
+            <span>
+              SYSTEM UI
+            </span>
+
+            <span>
+              JAVASCRIPT
+            </span>
+
+          </div>
+
+
+          <div class="project-footer">
+
+            <span>
+              FILE: MISSION_002
+            </span>
+
+            <a
+              href="terminal.html"
+              class="project-button"
+            >
+              OPEN TERMINAL →
+            </a>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROJECT 03
+             ================================================= -->
+
+        <article
+          class="project-card mission-card"
+          data-status="LEARNING"
+        >
+
+          <div class="project-top">
+
+            <span class="mission-number">
+              MISSION_003
+            </span>
+
+            <span class="mission-status">
+              ● LEARNING
+            </span>
+
+          </div>
+
+
+          <div class="project-icon">
+            {DB}
+          </div>
+
+
+          <h3>
+            DATABASE SYSTEM
+          </h3>
+
+
+          <div class="project-code">
+            DATA // SQL // DATABASE
+          </div>
+
+
+          <div class="project-info">
+
+            <div>
+              <span>TYPE</span>
+              <strong>DATABASE PROJECT</strong>
+            </div>
+
+            <div>
+              <span>STACK</span>
+              <strong>SQL</strong>
+            </div>
+
+            <div>
+              <span>YEAR</span>
+              <strong>2026</strong>
+            </div>
+
+            <div>
+              <span>STATUS</span>
+              <strong>LEARNING</strong>
+            </div>
+
+          </div>
+
+
+          <div class="project-description">
+
+            <h4>
+              &gt; OBJECTIVE
+            </h4>
+
+            <p>
+              Learn how structured data is stored, organized,
+              queried and managed while building a practical
+              foundation in SQL and database concepts.
+            </p>
+
+          </div>
+
+
+          <div class="project-features">
+
+            <span>
+              SQL
+            </span>
+
+            <span>
+              TABLES
+            </span>
+
+            <span>
+              QUERIES
+            </span>
+
+            <span>
+              DATA
+            </span>
+
+          </div>
+
+
+          <div class="project-footer">
+
+            <span>
+              FILE: MISSION_003
+            </span>
+
+            <a
+              href="skills.html"
+              class="project-button"
+            >
+              VIEW SKILLS →
+            </a>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       02 — PROJECT DATABASE
+       ===================================================== -->
+
+  <section
+    id="database"
+    class="reveal"
+  >
+
+    <div class="section-container">
+
+
+      <div class="section-header">
+
+        <div class="section-number">
+          [ 02 ] // DATABASE
+        </div>
+
+        <h2 class="section-title">
+          PROJECT DATABASE
+        </h2>
+
+        <div class="section-subtitle">
+          CLASSIFIED DEVELOPMENT RECORDS
+        </div>
+
+      </div>
+
+
+
+      <div class="identity-panel project-database">
+
+        <div class="identity-row">
+
+          <span>
+            TOTAL PROJECTS
+          </span>
+
+          <span>
+            03
+          </span>
+
+        </div>
+
+
+        <div class="identity-row">
+
+          <span>
+            ACTIVE PROJECTS
+          </span>
+
+          <span>
+            01
+          </span>
+
+        </div>
+
+
+        <div class="identity-row">
+
+          <span>
+            EXPERIMENTS
+          </span>
+
+          <span>
+            01
+          </span>
+
+        </div>
+
+
+        <div class="identity-row">
+
+          <span>
+            LEARNING PROJECTS
+          </span>
+
+          <span>
+            01
+          </span>
+
+        </div>
+
+
+        <div class="identity-row">
+
+          <span>
+            PRIMARY STACK
+          </span>
+
+          <span>
+            HTML // CSS // JS
+          </span>
+
+        </div>
+
+
+        <div class="identity-row">
+
+          <span>
+            DATABASE
+          </span>
+
+          <span>
+            SQL
+          </span>
+
+        </div>
+
+
+        <div class="identity-row">
+
+          <span>
+            DEVELOPMENT YEAR
+          </span>
+
+          <span>
+            2026
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       03 — TECHNOLOGY MATRIX
+       ===================================================== -->
+
+  <section
+    id="technology"
+    class="reveal"
+  >
+
+    <div class="section-container">
+
+
+      <div class="section-header">
+
+        <div class="section-number">
+          [ 03 ] // TECHNOLOGY
+        </div>
+
+        <h2 class="section-title">
+          TECHNOLOGY MATRIX
+        </h2>
+
+        <div class="section-subtitle">
+          TOOLS USED ACROSS MISSIONS
+        </div>
+
+      </div>
+
+
+
+      <div class="skills-grid">
+
+
+        <div class="skills-panel">
+
+          <h3>
+            WEB
+          </h3>
+
+          <div class="skill">
+
+            <div class="skill-top">
+
+              <span>
+                HTML
+              </span>
+
+              <strong>
+                LEARNING
+              </strong>
+
+            </div>
+
+            <div class="skill-track">
+
+              <div
+                class="skill-fill"
+                data-width="90%"
+              ></div>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill">
+
+            <div class="skill-top">
+
+              <span>
+                CSS
+              </span>
+
+              <strong>
+                LEARNING
+              </strong>
+
+            </div>
+
+            <div class="skill-track">
+
+              <div
+                class="skill-fill"
+                data-width="85%"
+              ></div>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill">
+
+            <div class="skill-top">
+
+              <span>
+                JAVASCRIPT
+              </span>
+
+              <strong>
+                LEARNING
+              </strong>
+
+            </div>
+
+            <div class="skill-track">
+
+              <div
+                class="skill-fill"
+                data-width="80%"
+              ></div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="skills-panel">
+
+          <h3>
+            PROGRAMMING
+          </h3>
+
+          <div class="skill">
+
+            <div class="skill-top">
+
+              <span>
+                PYTHON
+              </span>
+
+              <strong>
+                LEARNING
+              </strong>
+
+            </div>
+
+            <div class="skill-track">
+
+              <div
+                class="skill-fill"
+                data-width="70%"
+              ></div>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill">
+
+            <div class="skill-top">
+
+              <span>
+                C++
+              </span>
+
+              <strong>
+                LEARNING
+              </strong>
+
+            </div>
+
+            <div class="skill-track">
+
+              <div
+                class="skill-fill"
+                data-width="65%"
+              ></div>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill">
+
+            <div class="skill-top">
+
+              <span>
+                SQL
+              </span>
+
+              <strong>
+                LEARNING
+              </strong>
+
+            </div>
+
+            <div class="skill-track">
+
+              <div
+                class="skill-fill"
+                data-width="70%"
+              ></div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       04 — DEVELOPMENT LOG
+       ===================================================== -->
+
+  <section
+    id="developmentLog"
+    class="reveal"
+  >
+
+    <div class="section-container">
+
+
+      <div class="section-header">
+
+        <div class="section-number">
+          [ 04 ] // LOG
+        </div>
+
+        <h2 class="section-title">
+          DEVELOPMENT LOG
+        </h2>
+
+        <div class="section-subtitle">
+          BUILD PROCESS // LEARNING PROCESS
+        </div>
+
+      </div>
+
+
+
+      <div class="identity-text project-log">
+
+        <h3>
+          &gt; HOW PROJECTS ARE BUILT
+        </h3>
+
+        <p>
+          Every project starts with a simple idea. The goal is
+          to turn that idea into something that can actually be
+          built, tested and improved.
+        </p>
+
+        <br>
+
+        <p>
+          I first focus on understanding the basic structure,
+          then I write the code, test the interface, find
+          problems and debug them.
+        </p>
+
+        <br>
+
+        <p>
+          Design and functionality are improved step by step.
+          Each project is another opportunity to understand
+          how different parts of development work together.
+        </p>
+
+        <br>
+
+        <p>
+          The objective is not simply to finish a project.
+          The objective is to learn something from building it.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       05 — CURRENT MISSIONS
+       ===================================================== -->
+
+  <section
+    id="currentMissions"
+    class="reveal"
+  >
+
+    <div class="section-container">
+
+
+      <div class="section-header">
+
+        <div class="section-number">
+          [ 05 ] // STATUS
+        </div>
+
+        <h2 class="section-title">
+          CURRENT MISSIONS
+        </h2>
+
+        <div class="section-subtitle">
+          DEVELOPMENT STATUS // LIVE
+        </div>
+
+      </div>
+
+
+
+      <div class="status-grid">
+
+
+        <div class="status-card">
+
+          <div class="label">
+            PORTFOLIO
+          </div>
+
+          <div class="value">
+
+            <i class="status-dot"></i>
+
+            BUILDING
+
+          </div>
+
+        </div>
+
+
+        <div class="status-card">
+
+          <div class="label">
+            TERMINAL
+          </div>
+
+          <div class="value">
+
+            <i class="status-dot"></i>
+
+            EXPERIMENT
+
+          </div>
+
+        </div>
+
+
+        <div class="status-card">
+
+          <div class="label">
+            DATABASE
+          </div>
+
+          <div class="value">
+
+            <i class="status-dot"></i>
+
+            LEARNING
+
+          </div>
+
+        </div>
+
+
+        <div class="status-card">
+
+          <div class="label">
+            NEXT PROJECT
+          </div>
+
+          <div class="value">
+
+            <i class="status-dot"></i>
+
+            LOCKED
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       06 — FUTURE MISSIONS
+       ===================================================== -->
+
+  <section
+    id="futureMissions"
+    class="reveal"
+  >
+
+    <div class="section-container">
+
+
+      <div class="section-header">
+
+        <div class="section-number">
+          [ 06 ] // FUTURE
+        </div>
+
+        <h2 class="section-title">
+          FUTURE MISSIONS
+        </h2>
+
+        <div class="section-subtitle">
+          NEXT PROJECTS // LOCKED
+        </div>
+
+      </div>
+
+
+
+      <div class="about-grid">
+
+
+        <div class="identity-panel">
+
+          <h3>
+            NEXT TARGETS
+          </h3>
+
+          <ul class="module-list">
+
+            <li>
+              ADVANCED WEB APPLICATION
+            </li>
+
+            <li>
+              JAVASCRIPT PROJECT
+            </li>
+
+            <li>
+              PYTHON PROJECT
+            </li>
+
+            <li>
+              SQL DATABASE PROJECT
+            </li>
+
+            <li>
+              RESPONSIVE UI SYSTEM
+            </li>
+
+            <li>
+              SECURITY LEARNING PROJECT
+            </li>
+
+          </ul>
+
+        </div>
+
+
+
+        <div class="identity-text">
+
+          <h3>
+            &gt; MISSION DIRECTIVE
+          </h3>
+
+          <p>
+            Future projects will gradually become more advanced
+            as my understanding of programming, web development
+            and databases improves.
+          </p>
+
+          <br>
+
+          <p>
+            The objective is to move from simple experiments
+            toward useful applications that demonstrate actual
+            understanding and continuous improvement.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       07 — CLASSIFIED PROJECT TERMINAL
+       ===================================================== -->
+
+  <section
+    id="projectTerminal"
+    class="reveal"
+  >
+
+    <div class="section-container">
+
+
+      <div class="section-header">
+
+        <div class="section-number">
+          [ 07 ] // CLASSIFIED
+        </div>
+
+        <h2 class="section-title">
+          PROJECT TERMINAL
+        </h2>
+
+        <div class="section-subtitle">
+          AUTHORIZED PERSONNEL ONLY
+        </div>
+
+      </div>
+
+
+
+      <div class="terminal-window">
+
+        <div class="terminal-head">
+
+          KRISHNA@PROJECTS:
+          ~/MISSION_CONTROL
+
+        </div>
+
+
+        <div class="terminal-body">
+
+          <div class="terminal-line">
+            &gt; PROJECT DATABASE ONLINE
+          </div>
+
+          <div class="terminal-line">
+            &gt; MISSION_001 : BUILDING
+          </div>
+
+          <div class="terminal-line">
+            &gt; MISSION_002 : EXPERIMENT
+          </div>
+
+          <div class="terminal-line">
+            &gt; MISSION_003 : LEARNING
+          </div>
+
+          <div class="terminal-line">
+            &gt; DEVELOPMENT MODE : ACTIVE
+          </div>
+
+          <div class="terminal-line">
+            &gt; NEXT TARGET : UNKNOWN
+          </div>
+
+          <div class="terminal-line">
+            &gt; SYSTEM : KEEP BUILDING
+          </div>
+
+          <div class="terminal-prompt">
+            krishna@system:~$
+            <span class="cursor">
+              █
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       08 — FINAL MESSAGE
+       ===================================================== -->
+
+  <section
+    id="finalProject"
+    class="reveal"
+  >
+
+    <div class="section-container">
+
+
+      <div class="section-header">
+
+        <div class="section-number">
+          [ 08 ] // FINAL
+        </div>
+
+        <h2 class="section-title">
+          THE SYSTEM IS EVOLVING
+        </h2>
+
+        <div class="section-subtitle">
+          PROJECTS ARE ONLY THE BEGINNING
+        </div>
+
+      </div>
+
+
+
+      <div class="identity-panel final-project-panel">
+
+        <h3>
+          &gt; MISSION STATEMENT
+        </h3>
+
+        <p>
+          I'm still learning, still building and still
+          experimenting. Every project adds another piece to
+          the larger system.
+        </p>
+
+        <br>
+
+        <p>
+          The goal is simple:
+          <strong>
+            learn more, build better and keep evolving.
+          </strong>
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+  <footer class="site-footer">
+
+    <div>
+      KRISHNA // PROJECT DATABASE
+    </div>
+
+    <div>
+      SYSTEM ONLINE // 2026
+    </div>
+
+  </footer>
+
+
+
+  <!-- =====================================================
+       SCRIPT
+       ===================================================== -->
+
+  <script src="../script.js"></script>
+
+
+</body>
+
+</html>

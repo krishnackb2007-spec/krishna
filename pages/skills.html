@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Krishna — Developer Skills, Technologies and Learning Progress."
+  >
+
+  <title>KRISHNA // SKILLS</title>
+
+  <link
+    rel="stylesheet"
+    href="../style.css"
+  >
+
+</head>
+
+
+<body>
+
+  <!-- =====================================================
+       BACKGROUND
+       ===================================================== -->
+
+  <canvas id="matrixCanvas"></canvas>
+
+  <canvas id="particleCanvas"></canvas>
+
+  <div class="scanlines"></div>
+
+
+
+  <!-- =====================================================
+       TOP NAVIGATION
+       ===================================================== -->
+
+  <header class="topbar">
+
+    <a
+      href="../index.html"
+      class="logo"
+    >
+      KRISHNA // SYSTEM
+    </a>
+
+
+    <nav class="nav">
+
+      <a href="../index.html">
+        HOME
+      </a>
+
+      <a href="about.html">
+        ABOUT
+      </a>
+
+      <a
+        href="skills.html"
+        class="active"
+      >
+        SKILLS
+      </a>
+
+      <a href="projects.html">
+        PROJECTS
+      </a>
+
+      <a href="terminal.html">
+        TERMINAL
+      </a>
+
+      <a href="contact.html">
+        CONTACT
+      </a>
+
+    </nav>
+
+
+    <div
+      class="clock"
+      id="clock"
+    >
+      00:00:00
+    </div>
+
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      type="button"
+    >
+      ☰
+    </button>
+
+  </header>
+
+
+
+  <!-- =====================================================
+       DANGER MODE
+       ===================================================== -->
+
+  <button
+    id="dangerButton"
+    class="danger-button"
+    type="button"
+  >
+
+    ⚠ DANGER MODE
+
+    <br>
+
+    <span>
+      ● OFF
+    </span>
+
+  </button>
+
+
+  <div
+    id="dangerOverlay"
+    class="danger-overlay"
+  ></div>
+
+  <div id="dangerFlash"></div>
+
+
+
+  <!-- =====================================================
+       SKILLS HERO
+       ===================================================== -->
+
+  <main>
+
+    <section
+      class="hero skills-hero"
+      id="skillsHero"
+    >
+
+      <div class="hero-grid"></div>
+
+
+
+      <!-- LEFT HUD -->
+
+      <div class="hero-side left">
+
+        <div class="hud-panel">
+
+          <div class="hud-title">
+            SKILL STATUS
+          </div>
+
+          <div class="hud-line">
+
+            <span>
+              USER
+            </span>
+
+            <strong>
+              KRISHNA
+            </strong>
+
+          </div>
+
+          <div class="hud-line">
+
+            <span>
+              LEVEL
+            </span>
+
+            <strong>
+              BEGINNER
+            </strong>
+
+          </div>
+
+          <div class="hud-line">
+
+            <span>
+              MODE
+            </span>
+
+            <strong>
+              LEARNING
+            </strong>
+
+          </div>
+
+          <div class="hud-line">
+
+            <span>
+              STATUS
+            </span>
+
+            <strong>
+              ONLINE
+              <i class="online-dot"></i>
+            </strong>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="hud-panel">
+
+          <div class="hud-title">
+            ACTIVE AREAS
+          </div>
+
+          <ul class="module-list">
+
+            <li>
+              WEB DEVELOPMENT
+            </li>
+
+            <li>
+              PROGRAMMING
+            </li>
+
+            <li>
+              DATABASE
+            </li>
+
+            <li>
+              SECURITY LEARNING
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- CENTER -->
+
+      <div class="hero-content">
+
+        <div class="breach-text">
+          ⚠ SKILL DATABASE ACCESSED ⚠
+        </div>
+
+
+        <div class="welcome-small">
+          DEVELOPER // SKILL MATRIX
+        </div>
+
+
+        <h1 class="welcome-title">
+          SKILLS
+        </h1>
+
+
+        <div class="hero-tagline">
+          LEARN. PRACTICE. BUILD. IMPROVE.
+        </div>
+
+
+        <div class="krishna-box">
+
+          <div class="krishna-name">
+            WELCOME TO KRISHNA SKILLS
+          </div>
+
+          <div class="krishna-role">
+            TECHNOLOGY // LEARNING // 2026
+          </div>
+
+        </div>
+
+
+        <div class="initializing">
+
+          <div class="init-header">
+
+            <span>
+              &gt; LOADING SKILL MATRIX...
+            </span>
+
+            <span class="init-percent">
+              100%
+            </span>
+
+          </div>
+
+
+          <div class="init-bar">
+            <span></span>
+          </div>
+
+        </div>
+
+
+        <div class="hero-terminal">
+
+          <div>
+            &gt; SCANNING DEVELOPER SKILLS...
+          </div>
+
+          <div>
+            &gt; 06 CORE TECHNOLOGIES FOUND
+          </div>
+
+          <div>
+            &gt; LEARNING MODE: ACTIVE
+          </div>
+
+          <div>
+            &gt; SKILL MATRIX: ONLINE<span>_</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- RIGHT HUD -->
+
+      <div class="hero-side right">
+
+        <div class="hud-panel">
+
+          <div class="hud-title">
+            CLASSIFICATION
+          </div>
+
+          <div class="hud-line">
+
+            <span>
+              FIELD
+            </span>
+
+            <strong>
+              DEVELOPMENT
+            </strong>
+
+          </div>
+
+          <div class="hud-line">
+
+            <span>
+              STARTED
+            </span>
+
+            <strong>
+              2026
+            </strong>
+
+          </div>
+
+          <div class="hud-line">
+
+            <span>
+              EXPERIENCE
+            </span>
+
+            <strong>
+              BEGINNER
+            </strong>
+
+          </div>
+
+        </div>
+
+
+        <div class="hud-panel">
+
+          <div class="hud-title">
+            MISSION
+          </div>
+
+          <ul class="module-list">
+
+            <li>
+              MASTER FUNDAMENTALS
+            </li>
+
+            <li>
+              BUILD PROJECTS
+            </li>
+
+            <li>
+              DEBUG CODE
+            </li>
+
+            <li>
+              KEEP LEARNING
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         01 — CORE SKILLS
+         =================================================== -->
+
+    <section
+      id="coreSkills"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 01 ] // CORE SKILLS
+          </div>
+
+          <h2 class="section-title">
+            KRISHNA SKILL MATRIX
+          </h2>
+
+          <div class="section-subtitle">
+            CURRENT TECHNOLOGY // LEARNING STATUS
+          </div>
+
+        </div>
+
+
+
+        <div class="skills-grid">
+
+
+
+          <!-- HTML -->
+
+          <div class="skills-panel skill-main-panel">
+
+            <div class="skill-panel-head">
+
+              <span>
+                WEB_01
+              </span>
+
+              <strong>
+                FRONTEND
+              </strong>
+
+            </div>
+
+
+            <h3>
+              HTML
+            </h3>
+
+
+            <div class="skill-big-number">
+              90%
+            </div>
+
+
+            <div class="skill">
+
+              <div class="skill-top">
+
+                <span>
+                  HTML
+                </span>
+
+                <strong>
+                  LEARNING
+                </strong>
+
+              </div>
+
+              <div class="skill-track">
+
+                <div
+                  class="skill-fill"
+                  data-width="90%"
+                ></div>
+
+              </div>
+
+            </div>
+
+
+            <p>
+              Structure, semantic elements, forms,
+              sections and page architecture.
+            </p>
+
+          </div>
+
+
+
+          <!-- CSS -->
+
+          <div class="skills-panel skill-main-panel">
+
+            <div class="skill-panel-head">
+
+              <span>
+                WEB_02
+              </span>
+
+              <strong>
+                FRONTEND
+              </strong>
+
+            </div>
+
+
+            <h3>
+              CSS
+            </h3>
+
+
+            <div class="skill-big-number">
+              85%
+            </div>
+
+
+            <div class="skill">
+
+              <div class="skill-top">
+
+                <span>
+                  CSS
+                </span>
+
+                <strong>
+                  LEARNING
+                </strong>
+
+              </div>
+
+              <div class="skill-track">
+
+                <div
+                  class="skill-fill"
+                  data-width="85%"
+                ></div>
+
+              </div>
+
+            </div>
+
+
+            <p>
+              Layouts, responsive design, animations,
+              effects and interface styling.
+            </p>
+
+          </div>
+
+
+
+          <!-- JAVASCRIPT -->
+
+          <div class="skills-panel skill-main-panel">
+
+            <div class="skill-panel-head">
+
+              <span>
+                WEB_03
+              </span>
+
+              <strong>
+                LOGIC
+              </strong>
+
+            </div>
+
+
+            <h3>
+              JAVASCRIPT
+            </h3>
+
+
+            <div class="skill-big-number">
+              80%
+            </div>
+
+
+            <div class="skill">
+
+              <div class="skill-top">
+
+                <span>
+                  JAVASCRIPT
+                </span>
+
+                <strong>
+                  LEARNING
+                </strong>
+
+              </div>
+
+              <div class="skill-track">
+
+                <div
+                  class="skill-fill"
+                  data-width="80%"
+                ></div>
+
+              </div>
+
+            </div>
+
+
+            <p>
+              Interactions, events, DOM manipulation,
+              logic and frontend functionality.
+            </p>
+
+          </div>
+
+
+
+          <!-- PYTHON -->
+
+          <div class="skills-panel skill-main-panel">
+
+            <div class="skill-panel-head">
+
+              <span>
+                CODE_01
+              </span>
+
+              <strong>
+                PROGRAMMING
+              </strong>
+
+            </div>
+
+
+            <h3>
+              PYTHON
+            </h3>
+
+
+            <div class="skill-big-number">
+              70%
+            </div>
+
+
+            <div class="skill">
+
+              <div class="skill-top">
+
+                <span>
+                  PYTHON
+                </span>
+
+                <strong>
+                  LEARNING
+                </strong>
+
+              </div>
+
+              <div class="skill-track">
+
+                <div
+                  class="skill-fill"
+                  data-width="70%"
+                ></div>
+
+              </div>
+
+            </div>
+
+
+            <p>
+              Programming fundamentals, logic,
+              variables, conditions, loops and functions.
+            </p>
+
+          </div>
+
+
+
+          <!-- SQL -->
+
+          <div class="skills-panel skill-main-panel">
+
+            <div class="skill-panel-head">
+
+              <span>
+                DATA_01
+              </span>
+
+              <strong>
+                DATABASE
+              </strong>
+
+            </div>
+
+
+            <h3>
+              SQL
+            </h3>
+
+
+            <div class="skill-big-number">
+              70%
+            </div>
+
+
+            <div class="skill">
+
+              <div class="skill-top">
+
+                <span>
+                  SQL
+                </span>
+
+                <strong>
+                  LEARNING
+                </strong>
+
+              </div>
+
+              <div class="skill-track">
+
+                <div
+                  class="skill-fill"
+                  data-width="70%"
+                ></div>
+
+              </div>
+
+            </div>
+
+
+            <p>
+              Data, tables, queries and the fundamentals
+              of database systems.
+            </p>
+
+          </div>
+
+
+
+          <!-- C++ -->
+
+          <div class="skills-panel skill-main-panel">
+
+            <div class="skill-panel-head">
+
+              <span>
+                CODE_02
+              </span>
+
+              <strong>
+                PROGRAMMING
+              </strong>
+
+            </div>
+
+
+            <h3>
+              C++
+            </h3>
+
+
+            <div class="skill-big-number">
+              65%
+            </div>
+
+
+            <div class="skill">
+
+              <div class="skill-top">
+
+                <span>
+                  C++
+                </span>
+
+                <strong>
+                  LEARNING
+                </strong>
+
+              </div>
+
+              <div class="skill-track">
+
+                <div
+                  class="skill-fill"
+                  data-width="65%"
+                ></div>
+
+              </div>
+
+            </div>
+
+
+            <p>
+              Programming fundamentals, problem solving
+              and understanding core concepts.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         02 — DEVELOPMENT TOOLS
+         =================================================== -->
+
+    <section
+      id="tools"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 02 ] // TOOLS
+          </div>
+
+          <h2 class="section-title">
+            DEVELOPMENT TOOLKIT
+          </h2>
+
+          <div class="section-subtitle">
+            WORKFLOW // DEBUGGING // DEVELOPMENT
+          </div>
+
+        </div>
+
+
+
+        <div class="tools-grid">
+
+
+          <div class="tool-card">
+
+            <span class="tool-number">
+              TOOL_01
+            </span>
+
+            <h3>
+              GIT
+            </h3>
+
+            <p>
+              Version control and tracking development changes.
+            </p>
+
+            <span class="tool-status">
+              ● LEARNING
+            </span>
+
+          </div>
+
+
+          <div class="tool-card">
+
+            <span class="tool-number">
+              TOOL_02
+            </span>
+
+            <h3>
+              GITHUB
+            </h3>
+
+            <p>
+              Code hosting, project management and collaboration.
+            </p>
+
+            <span class="tool-status">
+              ● LEARNING
+            </span>
+
+          </div>
+
+
+          <div class="tool-card">
+
+            <span class="tool-number">
+              TOOL_03
+            </span>
+
+            <h3>
+              VS CODE
+            </h3>
+
+            <p>
+              Main development environment for writing and
+              testing code.
+            </p>
+
+            <span class="tool-status">
+              ● ACTIVE
+            </span>
+
+          </div>
+
+
+          <div class="tool-card">
+
+            <span class="tool-number">
+              TOOL_04
+            </span>
+
+            <h3>
+              DEBUGGING
+            </h3>
+
+            <p>
+              Finding problems, understanding errors and
+              improving code.
+            </p>
+
+            <span class="tool-status">
+              ● ACTIVE
+            </span>
+
+          </div>
+
+
+          <div class="tool-card">
+
+            <span class="tool-number">
+              TOOL_05
+            </span>
+
+            <h3>
+              DEVTOOLS
+            </h3>
+
+            <p>
+              Inspecting pages, testing layouts and debugging
+              browser behaviour.
+            </p>
+
+            <span class="tool-status">
+              ● ACTIVE
+            </span>
+
+          </div>
+
+
+          <div class="tool-card">
+
+            <span class="tool-number">
+              TOOL_06
+            </span>
+
+            <h3>
+              RESPONSIVE
+            </h3>
+
+            <p>
+              Testing interfaces across different screen sizes
+              and devices.
+            </p>
+
+            <span class="tool-status">
+              ● LEARNING
+            </span>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         03 — LEARNING DOMAINS
+         =================================================== -->
+
+    <section
+      id="domains"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 03 ] // DOMAINS
+          </div>
+
+          <h2 class="section-title">
+            LEARNING DOMAINS
+          </h2>
+
+          <div class="section-subtitle">
+            ACTIVE DEVELOPMENT AREAS
+          </div>
+
+        </div>
+
+
+
+        <div class="missions-grid">
+
+
+          <div class="mission-card">
+
+            <div class="mission-id">
+              DOMAIN_01
+            </div>
+
+            <h3>
+              FRONTEND
+            </h3>
+
+            <p>
+              Learning how websites are structured, styled and
+              made interactive using HTML, CSS and JavaScript.
+            </p>
+
+            <div class="mission-status">
+
+              <i class="status-dot"></i>
+
+              ACTIVE LEARNING
+
+            </div>
+
+          </div>
+
+
+
+          <div class="mission-card">
+
+            <div class="mission-id">
+              DOMAIN_02
+            </div>
+
+            <h3>
+              PROGRAMMING
+            </h3>
+
+            <p>
+              Building programming fundamentals with Python
+              and C++ while improving logic and problem solving.
+            </p>
+
+            <div class="mission-status">
+
+              <i class="status-dot"></i>
+
+              ACTIVE LEARNING
+
+            </div>
+
+          </div>
+
+
+
+          <div class="mission-card">
+
+            <div class="mission-id">
+              DOMAIN_03
+            </div>
+
+            <h3>
+              DATABASE
+            </h3>
+
+            <p>
+              Understanding SQL, structured data, tables,
+              queries and basic database concepts.
+            </p>
+
+            <div class="mission-status">
+
+              <i class="status-dot"></i>
+
+              ACTIVE LEARNING
+
+            </div>
+
+          </div>
+
+
+
+          <div class="mission-card">
+
+            <div class="mission-id">
+              DOMAIN_04
+            </div>
+
+            <h3>
+              SECURITY
+            </h3>
+
+            <p>
+              Exploring cybersecurity fundamentals and learning
+              how digital systems work from a security perspective.
+            </p>
+
+            <div class="mission-status">
+
+              <i class="status-dot"></i>
+
+              RESEARCH
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         04 — LEARNING PROCESS
+         =================================================== -->
+
+    <section
+      id="process"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 04 ] // PROCESS
+          </div>
+
+          <h2 class="section-title">
+            HOW I BUILD SKILLS
+          </h2>
+
+          <div class="section-subtitle">
+            LEARN // PRACTICE // DEBUG // IMPROVE
+          </div>
+
+        </div>
+
+
+
+        <div class="identity-panel learning-process">
+
+          <div class="identity-row">
+
+            <span>
+              STEP 01
+            </span>
+
+            <span>
+              LEARN THE CONCEPT
+            </span>
+
+          </div>
+
+
+          <div class="identity-row">
+
+            <span>
+              STEP 02
+            </span>
+
+            <span>
+              UNDERSTAND THE FUNDAMENTALS
+            </span>
+
+          </div>
+
+
+          <div class="identity-row">
+
+            <span>
+              STEP 03
+            </span>
+
+            <span>
+              BUILD SOMETHING
+            </span>
+
+          </div>
+
+
+          <div class="identity-row">
+
+            <span>
+              STEP 04
+            </span>
+
+            <span>
+              TEST THE CODE
+            </span>
+
+          </div>
+
+
+          <div class="identity-row">
+
+            <span>
+              STEP 05
+            </span>
+
+            <span>
+              FIND THE PROBLEM
+            </span>
+
+          </div>
+
+
+          <div class="identity-row">
+
+            <span>
+              STEP 06
+            </span>
+
+            <span>
+              DEBUG & FIX
+            </span>
+
+          </div>
+
+
+          <div class="identity-row">
+
+            <span>
+              STEP 07
+            </span>
+
+            <span>
+              IMPROVE
+            </span>
+
+          </div>
+
+
+          <div class="identity-row">
+
+            <span>
+              STEP 08
+            </span>
+
+            <span>
+              BUILD AGAIN
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         05 — CURRENT STATUS
+         =================================================== -->
+
+    <section
+      id="skillStatus"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 05 ] // STATUS
+          </div>
+
+          <h2 class="section-title">
+            SKILL SYSTEM STATUS
+          </h2>
+
+          <div class="section-subtitle">
+            CURRENT DEVELOPMENT STATE
+          </div>
+
+        </div>
+
+
+
+        <div class="status-grid">
+
+
+          <div class="status-card">
+
+            <div class="label">
+              FRONTEND
+            </div>
+
+            <div class="value">
+
+              <i class="status-dot"></i>
+
+              ACTIVE
+
+            </div>
+
+          </div>
+
+
+          <div class="status-card">
+
+            <div class="label">
+              JAVASCRIPT
+            </div>
+
+            <div class="value">
+
+              <i class="status-dot"></i>
+
+              LEARNING
+
+            </div>
+
+          </div>
+
+
+          <div class="status-card">
+
+            <div class="label">
+              PYTHON
+            </div>
+
+            <div class="value">
+
+              <i class="status-dot"></i>
+
+              BUILDING
+
+            </div>
+
+          </div>
+
+
+          <div class="status-card">
+
+            <div class="label">
+              SQL
+            </div>
+
+            <div class="value">
+
+              <i class="status-dot"></i>
+
+              LEARNING
+
+            </div>
+
+          </div>
+
+
+          <div class="status-card">
+
+            <div class="label">
+              C++
+            </div>
+
+            <div class="value">
+
+              <i class="status-dot"></i>
+
+              LEARNING
+
+            </div>
+
+          </div>
+
+
+          <div class="status-card">
+
+            <div class="label">
+              SECURITY
+            </div>
+
+            <div class="value">
+
+              <i class="status-dot"></i>
+
+              RESEARCH
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         06 — FUTURE SKILLS
+         =================================================== -->
+
+    <section
+      id="futureSkills"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 06 ] // FUTURE
+          </div>
+
+          <h2 class="section-title">
+            NEXT SKILL TARGETS
+          </h2>
+
+          <div class="section-subtitle">
+            FUTURE DEVELOPMENT // LOCKED
+          </div>
+
+        </div>
+
+
+
+        <div class="identity-text future-skills-text">
+
+          <h3>
+            &gt; NEXT OBJECTIVES
+          </h3>
+
+          <p>
+            Improve JavaScript understanding and build more
+            interactive web applications.
+          </p>
+
+          <br>
+
+          <p>
+            Strengthen programming fundamentals through Python
+            and C++ while working on practical projects.
+          </p>
+
+          <br>
+
+          <p>
+            Develop stronger database knowledge and understand
+            how applications communicate with stored data.
+          </p>
+
+          <br>
+
+          <p>
+            Continue learning responsive design, development
+            workflows, debugging and security fundamentals.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         07 — SKILL TERMINAL
+         =================================================== -->
+
+    <section
+      id="skillTerminal"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 07 ] // TERMINAL
+          </div>
+
+          <h2 class="section-title">
+            SKILL TERMINAL
+          </h2>
+
+          <div class="section-subtitle">
+            AUTHORIZED ACCESS
+          </div>
+
+        </div>
+
+
+
+        <div class="terminal-window">
+
+          <div class="terminal-head">
+
+            KRISHNA@SKILLS:
+            ~/SKILL_MATRIX
+
+          </div>
+
+
+          <div class="terminal-body">
+
+            <div class="terminal-line">
+              &gt; SKILL DATABASE ONLINE
+            </div>
+
+            <div class="terminal-line">
+              &gt; HTML : 90%
+            </div>
+
+            <div class="terminal-line">
+              &gt; CSS : 85%
+            </div>
+
+            <div class="terminal-line">
+              &gt; JAVASCRIPT : 80%
+            </div>
+
+            <div class="terminal-line">
+              &gt; PYTHON : 70%
+            </div>
+
+            <div class="terminal-line">
+              &gt; SQL : 70%
+            </div>
+
+            <div class="terminal-line">
+              &gt; C++ : 65%
+            </div>
+
+            <div class="terminal-line">
+              &gt; LEARNING MODE : ACTIVE
+            </div>
+
+            <div class="terminal-line">
+              &gt; NEXT LEVEL : KEEP BUILDING
+            </div>
+
+            <div class="terminal-prompt">
+
+              krishna@skills:~$
+
+              <span class="cursor">
+                █
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         08 — FINAL
+         =================================================== -->
+
+    <section
+      id="finalSkills"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 08 ] // FINAL
+          </div>
+
+          <h2 class="section-title">
+            SKILL SYSTEM EVOLVING
+          </h2>
+
+          <div class="section-subtitle">
+            LEARNING NEVER STOPS
+          </div>
+
+        </div>
+
+
+
+        <div class="identity-panel final-skill-panel">
+
+          <h3>
+            &gt; SYSTEM MESSAGE
+          </h3>
+
+          <p>
+            These numbers represent my current learning
+            progress, not professional experience.
+          </p>
+
+          <br>
+
+          <p>
+            The goal is to keep practicing, building real
+            projects, understanding fundamentals and improving
+            with every new challenge.
+          </p>
+
+          <br>
+
+          <p>
+            <strong>
+              LEARN MORE. BUILD BETTER. KEEP EVOLVING.
+            </strong>
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         ACCESS OTHER NODES
+         =================================================== -->
+
+    <section
+      id="connection"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 09 ] // CONNECTION
+          </div>
+
+          <h2 class="section-title">
+            ACCESS OTHER NODES
+          </h2>
+
+          <div class="section-subtitle">
+            NAVIGATION // SYSTEM NODES
+          </div>
+
+        </div>
+
+
+
+        <div class="status-grid">
+
+
+          <a
+            href="../index.html"
+            class="status-card"
+          >
+
+            <div class="label">
+              NODE_01
+            </div>
+
+            <div class="value">
+              HOME
+            </div>
+
+          </a>
+
+
+          <a
+            href="about.html"
+            class="status-card"
+          >
+
+            <div class="label">
+              NODE_02
+            </div>
+
+            <div class="value">
+              ABOUT
+            </div>
+
+          </a>
+
+
+          <a
+            href="projects.html"
+            class="status-card"
+          >
+
+            <div class="label">
+              NODE_03
+            </div>
+
+            <div class="value">
+              PROJECTS
+            </div>
+
+          </a>
+
+
+          <a
+            href="terminal.html"
+            class="status-card"
+          >
+
+            <div class="label">
+              NODE_04
+            </div>
+
+            <div class="value">
+              TERMINAL
+            </div>
+
+          </a>
+
+
+          <a
+            href="contact.html"
+            class="status-card"
+          >
+
+            <div class="label">
+              NODE_05
+            </div>
+
+            <div class="value">
+              CONTACT
+            </div>
+
+          </a>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+  <footer class="site-footer">
+
+    <div>
+      KRISHNA // SKILL DATABASE
+    </div>
+
+    <div>
+      SYSTEM ONLINE // 2026
+    </div>
+
+  </footer>
+
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+       ===================================================== -->
+
+  <script src="../script.js"></script>
+
+</body>
+
+</html>

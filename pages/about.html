@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Krishna — Beginner Developer. Web development, programming, databases and technology learning."
+  >
+
+  <title>KRISHNA // ABOUT</title>
+
+  <link
+    rel="stylesheet"
+    href="../style.css"
+  >
+</head>
+
+<body>
+
+  <!-- =====================================================
+       BACKGROUND SYSTEM
+       ===================================================== -->
+
+  <canvas id="matrixCanvas"></canvas>
+  <canvas id="particleCanvas"></canvas>
+
+  <div class="scanlines"></div>
+
+
+  <!-- =====================================================
+       TOP NAVIGATION
+       ===================================================== -->
+
+  <header class="topbar">
+
+    <a
+      href="../index.html"
+      class="logo"
+    >
+      KRISHNA // SYSTEM
+    </a>
+
+    <nav class="nav">
+
+      <a href="../index.html">
+        HOME
+      </a>
+
+      <a
+        href="about.html"
+        class="active"
+      >
+        ABOUT
+      </a>
+
+      <a href="skills.html">
+        SKILLS
+      </a>
+
+      <a href="projects.html">
+        PROJECTS
+      </a>
+
+      <a href="terminal.html">
+        TERMINAL
+      </a>
+
+      <a href="contact.html">
+        CONTACT
+      </a>
+
+    </nav>
+
+    <div
+      class="clock"
+      id="clock"
+    >
+      00:00:00
+    </div>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      type="button"
+      aria-label="Open navigation"
+    >
+      ☰
+    </button>
+
+  </header>
+
+
+
+  <!-- =====================================================
+       DANGER MODE
+       ===================================================== -->
+
+  <button
+    id="dangerButton"
+    class="danger-button"
+    type="button"
+  >
+    ⚠ DANGER MODE
+    <br>
+    <span>● OFF</span>
+  </button>
+
+  <div
+    id="dangerOverlay"
+    class="danger-overlay"
+  ></div>
+
+  <div id="dangerFlash"></div>
+
+
+
+  <!-- =====================================================
+       MAIN
+       ===================================================== -->
+
+  <main>
+
+
+    <!-- ===================================================
+         ABOUT HERO
+         =================================================== -->
+
+    <section
+      class="hero"
+      id="aboutHero"
+    >
+
+      <div class="hero-grid"></div>
+
+
+      <!-- LEFT HUD -->
+
+      <div class="hero-side left">
+
+        <div class="hud-panel">
+
+          <div class="hud-title">
+            IDENTITY NODE
+          </div>
+
+          <div class="hud-line">
+            <span>USER</span>
+            <strong>KRISHNA</strong>
+          </div>
+
+          <div class="hud-line">
+            <span>ROLE</span>
+            <strong>DEVELOPER</strong>
+          </div>
+
+          <div class="hud-line">
+            <span>LEVEL</span>
+            <strong>BEGINNER</strong>
+          </div>
+
+          <div class="hud-line">
+            <span>STATUS</span>
+
+            <strong>
+              ONLINE
+              <i class="online-dot"></i>
+            </strong>
+          </div>
+
+        </div>
+
+
+        <div class="hud-panel">
+
+          <div class="hud-title">
+            SYSTEM STATE
+          </div>
+
+          <div class="hud-bars">
+
+            <div class="hud-bar-row">
+
+              <span>CODE</span>
+
+              <div class="hud-bar">
+                <span style="width:78%"></span>
+              </div>
+
+              <span>78%</span>
+
+            </div>
+
+
+            <div class="hud-bar-row">
+
+              <span>LEARN</span>
+
+              <div class="hud-bar">
+                <span style="width:92%"></span>
+              </div>
+
+              <span>92%</span>
+
+            </div>
+
+
+            <div class="hud-bar-row">
+
+              <span>BUILD</span>
+
+              <div class="hud-bar">
+                <span style="width:84%"></span>
+              </div>
+
+              <span>84%</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- RIGHT HUD -->
+
+      <div class="hero-side right">
+
+        <div class="hud-panel">
+
+          <div class="hud-title">
+            CLASSIFICATION
+          </div>
+
+          <div class="hud-line">
+            <span>ORIGIN</span>
+            <strong>INDIA</strong>
+          </div>
+
+          <div class="hud-line">
+            <span>STARTED</span>
+            <strong>2026</strong>
+          </div>
+
+          <div class="hud-line">
+            <span>MODE</span>
+            <strong>BUILD</strong>
+          </div>
+
+          <div class="hud-line">
+            <span>MISSION</span>
+            <strong>LEARN</strong>
+          </div>
+
+        </div>
+
+
+        <div class="hud-panel">
+
+          <div class="hud-title">
+            CURRENT FOCUS
+          </div>
+
+          <ul class="module-list">
+
+            <li>WEB DEVELOPMENT</li>
+            <li>JAVASCRIPT</li>
+            <li>PYTHON</li>
+            <li>SQL</li>
+            <li>C++</li>
+            <li>SECURITY LEARNING</li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- CENTER HERO -->
+
+      <div class="hero-content">
+
+        <div class="breach-text">
+          ⚠ SYSTEM BREACH DETECTED ⚠
+        </div>
+
+        <div class="welcome-small">
+          IDENTITY // PROFILE
+        </div>
+
+        <h1 class="welcome-title">
+          KRISHNA
+        </h1>
+
+        <div class="hero-tagline">
+          BEGINNER DEVELOPER // CREATOR // LEARNER
+        </div>
+
+
+        <div class="krishna-box">
+
+          <div class="krishna-name">
+            DEVELOPER NODE
+          </div>
+
+          <div class="krishna-role">
+            INDIA // 2026 // AUTHORIZED ACCESS
+          </div>
+
+        </div>
+
+
+        <div class="initializing">
+
+          <div class="init-header">
+
+            <span>
+              &gt; LOADING DEVELOPER PROFILE...
+            </span>
+
+            <span class="init-percent">
+              100%
+            </span>
+
+          </div>
+
+          <div class="init-bar">
+            <span></span>
+          </div>
+
+        </div>
+
+
+        <div class="hero-terminal">
+
+          <div>
+            &gt; IDENTITY VERIFIED...
+          </div>
+
+          <div>
+            &gt; PROFILE DATABASE CONNECTED...
+          </div>
+
+          <div>
+            &gt; DEVELOPER JOURNEY LOADED...
+          </div>
+
+          <div>
+            &gt; SYSTEM READY<span>_</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         01 — WHO IS KRISHNA
+         =================================================== -->
+
+    <section
+      id="identity"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 01 ] // IDENTITY
+          </div>
+
+          <h2 class="section-title">
+            WHO IS KRISHNA?
+          </h2>
+
+          <div class="section-subtitle">
+            DEVELOPER // CREATOR // LEARNER
+          </div>
+
+        </div>
+
+
+        <div class="about-grid">
+
+
+          <!-- IDENTITY FILE -->
+
+          <div class="identity-panel">
+
+            <h3>
+              IDENTITY FILE
+            </h3>
+
+
+            <div class="identity-row">
+              <span>CODENAME</span>
+              <span>KRISHNA</span>
+            </div>
+
+            <div class="identity-row">
+              <span>ROLE</span>
+              <span>BEGINNER DEVELOPER</span>
+            </div>
+
+            <div class="identity-row">
+              <span>ORIGIN</span>
+              <span>INDIA</span>
+            </div>
+
+            <div class="identity-row">
+              <span>STARTED</span>
+              <span>2026</span>
+            </div>
+
+            <div class="identity-row">
+              <span>PRIMARY FIELD</span>
+              <span>WEB DEVELOPMENT</span>
+            </div>
+
+            <div class="identity-row">
+              <span>PROGRAMMING</span>
+              <span>PYTHON // C++</span>
+            </div>
+
+            <div class="identity-row">
+              <span>DATABASE</span>
+              <span>SQL</span>
+            </div>
+
+            <div class="identity-row">
+
+              <span>STATUS</span>
+
+              <span>
+                ONLINE
+                <i class="online-dot"></i>
+              </span>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- INTRODUCTION -->
+
+          <div class="identity-text">
+
+            <h3>
+              &gt; WHO_AM_I
+            </h3>
+
+            <p>
+              I'm Krishna, a beginner developer from India
+              who started my development journey in 2026.
+              I'm currently focused on understanding how
+              websites, applications, databases and digital
+              systems are built from the ground up.
+            </p>
+
+            <br>
+
+            <p>
+              My journey is still at the beginning, but
+              that's exactly what makes it exciting. I'm
+              learning the fundamentals, experimenting with
+              code, building projects and trying to understand
+              what happens behind the interface that people
+              normally see.
+            </p>
+
+            <br>
+
+            <p>
+              My current learning path includes HTML, CSS,
+              JavaScript, SQL, Python and C++. Alongside
+              programming, I'm also exploring responsive web
+              design, Git and GitHub, debugging, problem
+              solving, development workflows and the
+              fundamentals of cybersecurity.
+            </p>
+
+            <br>
+
+            <p>
+              I don't want to simply copy code and call it
+              development. My goal is to understand why
+              something works, why it breaks, how it can be
+              improved and how different technologies work
+              together.
+            </p>
+
+            <br>
+
+            <p>
+              I'm not here to pretend that I know everything.
+              I'm here to learn, build, experiment and become
+              better with every project.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         02 — DEVELOPMENT JOURNEY
+         =================================================== -->
+
+    <section
+      id="journey"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 02 ] // JOURNEY
+          </div>
+
+          <h2 class="section-title">
+            DEVELOPMENT JOURNEY
+          </h2>
+
+          <div class="section-subtitle">
+            SYSTEM EVOLUTION // 2026
+          </div>
+
+        </div>
+
+
+        <div class="identity-panel">
+
+          <div class="identity-row">
+            <span>2026 // PHASE 01</span>
+            <span>STARTED DEVELOPMENT</span>
+          </div>
+
+          <div class="identity-row">
+            <span>PHASE 02</span>
+            <span>HTML FUNDAMENTALS</span>
+          </div>
+
+          <div class="identity-row">
+            <span>PHASE 03</span>
+            <span>CSS & RESPONSIVE DESIGN</span>
+          </div>
+
+          <div class="identity-row">
+            <span>PHASE 04</span>
+            <span>JAVASCRIPT FUNDAMENTALS</span>
+          </div>
+
+          <div class="identity-row">
+            <span>PHASE 05</span>
+            <span>SQL & DATABASE CONCEPTS</span>
+          </div>
+
+          <div class="identity-row">
+            <span>PHASE 06</span>
+            <span>PYTHON PROGRAMMING</span>
+          </div>
+
+          <div class="identity-row">
+            <span>PHASE 07</span>
+            <span>C++ PROGRAMMING</span>
+          </div>
+
+          <div class="identity-row">
+            <span>CURRENT</span>
+            <span>BUILDING & EXPERIMENTING</span>
+          </div>
+
+        </div>
+
+
+        <div
+          class="identity-text"
+          style="margin-top:25px;"
+        >
+
+          <h3>
+            &gt; THE JOURNEY IS JUST STARTING
+          </h3>
+
+          <p>
+            Every developer starts somewhere. For me,
+            2026 is the starting point of this journey.
+            Instead of trying to learn everything at once,
+            I'm focusing on building a strong foundation
+            and gradually moving toward more advanced
+            projects.
+          </p>
+
+          <br>
+
+          <p>
+            Each new concept gives me another piece of the
+            larger system. HTML helps me understand structure.
+            CSS teaches me how interfaces are designed.
+            JavaScript introduces logic and interaction.
+            SQL opens the world of data. Python and C++
+            strengthen my programming fundamentals.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         03 — CURRENT TECH STACK
+         =================================================== -->
+
+    <section
+      id="stack"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 03 ] // STACK
+          </div>
+
+          <h2 class="section-title">
+            CURRENT TECH STACK
+          </h2>
+
+          <div class="section-subtitle">
+            TECHNOLOGY // LEARNING STATUS
+          </div>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+
+          <!-- WEB -->
+
+          <div class="skills-panel">
+
+            <h3>
+              WEB DEVELOPMENT
+            </h3>
+
+
+            <div class="skill">
+
+              <div class="skill-top">
+                <span>HTML</span>
+                <strong>LEARNING</strong>
+              </div>
+
+              <div class="skill-track">
+                <div
+                  class="skill-fill"
+                  data-width="90%"
+                ></div>
+              </div>
+
+            </div>
+
+
+            <div class="skill">
+
+              <div class="skill-top">
+                <span>CSS</span>
+                <strong>LEARNING</strong>
+              </div>
+
+              <div class="skill-track">
+                <div
+                  class="skill-fill"
+                  data-width="85%"
+                ></div>
+              </div>
+
+            </div>
+
+
+            <div class="skill">
+
+              <div class="skill-top">
+                <span>JAVASCRIPT</span>
+                <strong>LEARNING</strong>
+              </div>
+
+              <div class="skill-track">
+                <div
+                  class="skill-fill"
+                  data-width="80%"
+                ></div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- PROGRAMMING -->
+
+          <div class="skills-panel">
+
+            <h3>
+              PROGRAMMING
+            </h3>
+
+
+            <div class="skill">
+
+              <div class="skill-top">
+                <span>PYTHON</span>
+                <strong>LEARNING</strong>
+              </div>
+
+              <div class="skill-track">
+                <div
+                  class="skill-fill"
+                  data-width="70%"
+                ></div>
+              </div>
+
+            </div>
+
+
+            <div class="skill">
+
+              <div class="skill-top">
+                <span>C++</span>
+                <strong>LEARNING</strong>
+              </div>
+
+              <div class="skill-track">
+                <div
+                  class="skill-fill"
+                  data-width="65%"
+                ></div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- DATABASE -->
+
+          <div class="skills-panel">
+
+            <h3>
+              DATABASE
+            </h3>
+
+
+            <div class="skill">
+
+              <div class="skill-top">
+                <span>SQL</span>
+                <strong>LEARNING</strong>
+              </div>
+
+              <div class="skill-track">
+                <div
+                  class="skill-fill"
+                  data-width="70%"
+                ></div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- TOOLS -->
+
+          <div class="skills-panel">
+
+            <h3>
+              DEVELOPMENT TOOLS
+            </h3>
+
+            <ul class="module-list">
+
+              <li>GIT</li>
+              <li>GITHUB</li>
+              <li>VS CODE</li>
+              <li>DEBUGGING</li>
+              <li>BROWSER DEVTOOLS</li>
+              <li>RESPONSIVE TESTING</li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         04 — WHAT I'M LEARNING
+         =================================================== -->
+
+    <section
+      id="learning"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 04 ] // LEARNING
+          </div>
+
+          <h2 class="section-title">
+            WHAT I'M LEARNING
+          </h2>
+
+          <div class="section-subtitle">
+            ACTIVE RESEARCH // CONTINUOUS IMPROVEMENT
+          </div>
+
+        </div>
+
+
+        <div class="missions-grid">
+
+
+          <div class="mission-card">
+
+            <div class="mission-id">
+              MODULE_01
+            </div>
+
+            <h3>
+              FRONTEND
+            </h3>
+
+            <p>
+              Building responsive and interactive web
+              interfaces using HTML, CSS and JavaScript.
+              Learning how structure, styling and logic
+              work together.
+            </p>
+
+            <div class="mission-status">
+              <i class="status-dot"></i>
+              ACTIVE LEARNING
+            </div>
+
+          </div>
+
+
+
+          <div class="mission-card">
+
+            <div class="mission-id">
+              MODULE_02
+            </div>
+
+            <h3>
+              PROGRAMMING
+            </h3>
+
+            <p>
+              Strengthening programming fundamentals through
+              Python and C++. Focusing on logic, variables,
+              conditions, loops, functions and problem solving.
+            </p>
+
+            <div class="mission-status">
+              <i class="status-dot"></i>
+              ACTIVE LEARNING
+            </div>
+
+          </div>
+
+
+
+          <div class="mission-card">
+
+            <div class="mission-id">
+              MODULE_03
+            </div>
+
+            <h3>
+              DATABASE
+            </h3>
+
+            <p>
+              Learning SQL and understanding how structured
+              data is stored, queried, connected and managed
+              inside database systems.
+            </p>
+
+            <div class="mission-status">
+              <i class="status-dot"></i>
+              ACTIVE LEARNING
+            </div>
+
+          </div>
+
+
+
+          <div class="mission-card">
+
+            <div class="mission-id">
+              MODULE_04
+            </div>
+
+            <h3>
+              SECURITY
+            </h3>
+
+            <p>
+              Exploring cybersecurity concepts, secure
+              development practices and how digital systems
+              can be protected. This is a learning area,
+              not a claim of professional security expertise.
+            </p>
+
+            <div class="mission-status">
+              <i class="status-dot"></i>
+              EXPLORING
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         05 — HOW I LEARN
+         =================================================== -->
+
+    <section
+      id="learning-process"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 05 ] // PROCESS
+          </div>
+
+          <h2 class="section-title">
+            HOW I LEARN
+          </h2>
+
+          <div class="section-subtitle">
+            LEARN // BUILD // DEBUG // IMPROVE
+          </div>
+
+        </div>
+
+
+        <div class="identity-panel">
+
+          <div class="identity-row">
+            <span>01</span>
+            <span>LEARN THE CONCEPT</span>
+          </div>
+
+          <div class="identity-row">
+            <span>02</span>
+            <span>UNDERSTAND THE FUNDAMENTALS</span>
+          </div>
+
+          <div class="identity-row">
+            <span>03</span>
+            <span>BUILD SOMETHING</span>
+          </div>
+
+          <div class="identity-row">
+            <span>04</span>
+            <span>TEST IT</span>
+          </div>
+
+          <div class="identity-row">
+            <span>05</span>
+            <span>FIND THE PROBLEM</span>
+          </div>
+
+          <div class="identity-row">
+            <span>06</span>
+            <span>DEBUG IT</span>
+          </div>
+
+          <div class="identity-row">
+            <span>07</span>
+            <span>IMPROVE THE DESIGN</span>
+          </div>
+
+          <div class="identity-row">
+            <span>08</span>
+            <span>BUILD AGAIN</span>
+          </div>
+
+        </div>
+
+
+        <div
+          class="identity-text"
+          style="margin-top:25px;"
+        >
+
+          <p>
+            I believe the fastest way to understand
+            development is to combine learning with
+            building. Reading documentation and studying
+            concepts is important, but creating something
+            makes those concepts practical.
+          </p>
+
+          <br>
+
+          <p>
+            When something doesn't work, I want to understand
+            the reason instead of simply replacing the code.
+            Debugging is part of development, and every error
+            can reveal something new about the system.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         06 — DEVELOPER MINDSET
+         =================================================== -->
+
+    <section
+      id="mindset"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 06 ] // MINDSET
+          </div>
+
+          <h2 class="section-title">
+            DEVELOPER MINDSET
+          </h2>
+
+          <div class="section-subtitle">
+            SYSTEM PHILOSOPHY
+          </div>
+
+        </div>
+
+
+        <div class="missions-grid">
+
+
+          <div class="mission-card">
+
+            <div class="mission-id">
+              PRINCIPLE_01
+            </div>
+
+            <h3>
+              THINK DIFFERENT
+            </h3>
+
+            <p>
+              Try to look at problems from different
+              directions instead of immediately accepting
+              the first solution.
+            </p>
+
+            <div class="mission-status">
+              <i class="status-dot"></i>
+              ACTIVE
+            </div>
+
+          </div>
+
+
+
+          <div class="mission-card">
+
+            <div class="mission-id">
+              PRINCIPLE_02
+            </div>
+
+            <h3>
+              BUILD FROM ZERO
+            </h3>
+
+            <p>
+              Start with the fundamentals, understand each
+              part and gradually combine those parts into
+              something useful.
+            </p>
+
+            <div class="mission-status">
+              <i class="status-dot"></i>
+              ACTIVE
+            </div>
+
+          </div>
+
+
+
+          <div class="mission-card">
+
+            <div class="mission-id">
+              PRINCIPLE_03
+            </div>
+
+            <h3>
+              LEARN FROM FAILURE
+            </h3>
+
+            <p>
+              Errors are part of the process. Instead of
+              avoiding them, use them to understand what
+              needs to change.
+            </p>
+
+            <div class="mission-status">
+              <i class="status-dot"></i>
+              ACTIVE
+            </div>
+
+          </div>
+
+
+
+          <div class="mission-card">
+
+            <div class="mission-id">
+              PRINCIPLE_04
+            </div>
+
+            <h3>
+              KEEP EXPERIMENTING
+            </h3>
+
+            <p>
+              Test new ideas, change approaches and keep
+              building. Every experiment can teach something
+              valuable.
+            </p>
+
+            <div class="mission-status">
+              <i class="status-dot"></i>
+              ACTIVE
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         07 — CURRENT FOCUS
+         =================================================== -->
+
+    <section
+      id="focus"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 07 ] // FOCUS
+          </div>
+
+          <h2 class="section-title">
+            CURRENT FOCUS
+          </h2>
+
+          <div class="section-subtitle">
+            LIVE DEVELOPMENT STATUS
+          </div>
+
+        </div>
+
+
+        <div class="status-grid">
+
+
+          <div class="status-card">
+
+            <div class="label">
+              FRONTEND
+            </div>
+
+            <div class="value">
+              ACTIVE
+            </div>
+
+            <i class="status-dot"></i>
+
+          </div>
+
+
+
+          <div class="status-card">
+
+            <div class="label">
+              JAVASCRIPT
+            </div>
+
+            <div class="value">
+              LEARNING
+            </div>
+
+            <i class="status-dot"></i>
+
+          </div>
+
+
+
+          <div class="status-card">
+
+            <div class="label">
+              DATABASE
+            </div>
+
+            <div class="value">
+              LEARNING
+            </div>
+
+            <i class="status-dot"></i>
+
+          </div>
+
+
+
+          <div class="status-card">
+
+            <div class="label">
+              PYTHON
+            </div>
+
+            <div class="value">
+              BUILDING
+            </div>
+
+            <i class="status-dot"></i>
+
+          </div>
+
+
+
+          <div class="status-card">
+
+            <div class="label">
+              C++
+            </div>
+
+            <div class="value">
+              BUILDING
+            </div>
+
+            <i class="status-dot"></i>
+
+          </div>
+
+
+
+          <div class="status-card">
+
+            <div class="label">
+              SECURITY
+            </div>
+
+            <div class="value">
+              EXPLORING
+            </div>
+
+            <i class="status-dot"></i>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         08 — MISSION 2026
+         =================================================== -->
+
+    <section
+      id="mission-2026"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 08 ] // MISSION
+          </div>
+
+          <h2 class="section-title">
+            MISSION 2026
+          </h2>
+
+          <div class="section-subtitle">
+            BUILDING THE FOUNDATION
+          </div>
+
+        </div>
+
+
+        <div class="identity-text">
+
+          <h3>
+            &gt; PRIMARY OBJECTIVE
+          </h3>
+
+          <p>
+            Become a stronger developer by mastering
+            fundamentals, creating real projects and
+            continuously improving through practice.
+          </p>
+
+          <br>
+
+          <p>
+            The goal is not simply to collect programming
+            languages. The goal is to understand how web
+            development, programming, databases and modern
+            technology can work together to create useful
+            digital products.
+          </p>
+
+          <br>
+
+          <p>
+            Another important part of this mission is
+            exploring security concepts and learning how
+            systems can be designed more responsibly.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         09 — FUTURE DIRECTION
+         =================================================== -->
+
+    <section
+      id="future"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 09 ] // FUTURE
+          </div>
+
+          <h2 class="section-title">
+            FUTURE DIRECTION
+          </h2>
+
+          <div class="section-subtitle">
+            LONG TERM DEVELOPMENT TARGETS
+          </div>
+
+        </div>
+
+
+        <div class="missions-grid">
+
+
+          <div class="mission-card">
+
+            <div class="mission-id">
+              TARGET_01
+            </div>
+
+            <h3>
+              ADVANCED WEB
+            </h3>
+
+            <p>
+              Continue developing stronger frontend and
+              web development fundamentals.
+            </p>
+
+          </div>
+
+
+
+          <div class="mission-card">
+
+            <div class="mission-id">
+              TARGET_02
+            </div>
+
+            <h3>
+              STRONGER JAVASCRIPT
+            </h3>
+
+            <p>
+              Improve JavaScript knowledge and understand
+              deeper concepts of interactive applications.
+            </p>
+
+          </div>
+
+
+
+          <div class="mission-card">
+
+            <div class="mission-id">
+              TARGET_03
+            </div>
+
+            <h3>
+              DATABASE DESIGN
+            </h3>
+
+            <p>
+              Develop a stronger understanding of SQL,
+              structured data and database systems.
+            </p>
+
+          </div>
+
+
+
+          <div class="mission-card">
+
+            <div class="mission-id">
+              TARGET_04
+            </div>
+
+            <h3>
+              REAL PROJECTS
+            </h3>
+
+            <p>
+              Turn concepts into practical projects and
+              continue learning through real implementation.
+            </p>
+
+          </div>
+
+
+
+          <div class="mission-card">
+
+            <div class="mission-id">
+              TARGET_05
+            </div>
+
+            <h3>
+              UI / UX
+            </h3>
+
+            <p>
+              Build cleaner, more useful and more
+              engaging interfaces.
+            </p>
+
+          </div>
+
+
+
+          <div class="mission-card">
+
+            <div class="mission-id">
+              TARGET_06
+            </div>
+
+            <h3>
+              SECURITY FUNDAMENTALS
+            </h3>
+
+            <p>
+              Continue exploring responsible security
+              concepts and secure development practices.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         10 — CLASSIFIED DEVELOPER FILE
+         =================================================== -->
+
+    <section
+      id="classified"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 10 ] // CLASSIFIED
+          </div>
+
+          <h2 class="section-title">
+            DEVELOPER FILE
+          </h2>
+
+          <div class="section-subtitle">
+            INTERNAL SYSTEM RECORD
+          </div>
+
+        </div>
+
+
+        <div class="terminal-window">
+
+          <div class="terminal-head">
+
+            <span>
+              KRISHNA_PROFILE.sys
+            </span>
+
+            <span>
+              ● ONLINE
+            </span>
+
+          </div>
+
+
+          <div class="terminal-body">
+
+            <div class="terminal-line">
+              &gt; ACCESSING PROFILE...
+            </div>
+
+            <div class="terminal-line">
+              USER          : KRISHNA
+            </div>
+
+            <div class="terminal-line">
+              ORIGIN        : INDIA
+            </div>
+
+            <div class="terminal-line">
+              STARTED       : 2026
+            </div>
+
+            <div class="terminal-line">
+              LEVEL         : BEGINNER
+            </div>
+
+            <div class="terminal-line">
+              FIELD         : WEB DEVELOPMENT
+            </div>
+
+            <div class="terminal-line">
+              PROGRAMMING   : PYTHON // C++
+            </div>
+
+            <div class="terminal-line">
+              DATABASE      : SQL
+            </div>
+
+            <div class="terminal-line">
+              STATUS        : LEARNING
+            </div>
+
+            <div class="terminal-line">
+              MISSION       : BUILD
+            </div>
+
+            <div class="terminal-line">
+              MINDSET       : KEEP LEARNING
+            </div>
+
+            <div class="terminal-line">
+              CURRENT STATE : EVOLVING
+            </div>
+
+            <br>
+
+            <div class="terminal-line">
+
+              <span class="terminal-prompt">
+                &gt;
+              </span>
+
+              THE SYSTEM IS NEVER FINISHED.
+
+            </div>
+
+
+            <div class="terminal-line">
+
+              <span class="terminal-prompt">
+                &gt;
+              </span>
+
+              THERE IS ALWAYS SOMETHING NEW TO BUILD.
+
+            </div>
+
+
+            <div class="terminal-line">
+
+              <span class="terminal-prompt">
+                &gt;
+              </span>
+
+              THERE IS ALWAYS SOMETHING NEW TO LEARN.
+
+            </div>
+
+
+            <div class="terminal-line">
+
+              <span class="terminal-prompt">
+                &gt;
+              </span>
+
+              SYSTEM STATUS: EVOLVING_
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         11 — FINAL MESSAGE
+         =================================================== -->
+
+    <section
+      id="final-message"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 11 ] // FINAL MESSAGE
+          </div>
+
+          <h2 class="section-title">
+            THE JOURNEY HAS JUST STARTED
+          </h2>
+
+        </div>
+
+
+        <div
+          class="identity-text"
+          style="text-align:center;"
+        >
+
+          <p>
+            I'M STILL LEARNING.
+          </p>
+
+          <br>
+
+          <p>
+            I'M STILL BUILDING.
+          </p>
+
+          <br>
+
+          <p>
+            I'M STILL EXPERIMENTING.
+          </p>
+
+          <br>
+
+          <p>
+            I'M STILL IMPROVING.
+          </p>
+
+          <br>
+
+          <p>
+            AND THIS SYSTEM WILL KEEP EVOLVING.
+          </p>
+
+          <br>
+
+          <h3>
+            — KRISHNA
+          </h3>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         12 — CONNECTION
+         =================================================== -->
+
+    <section
+      id="connection"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 12 ] // CONNECTION
+          </div>
+
+          <h2 class="section-title">
+            ACCESS OTHER NODES
+          </h2>
+
+          <div class="section-subtitle">
+            NAVIGATION // SYSTEM MODULES
+          </div>
+
+        </div>
+
+
+        <div class="missions-grid">
+
+
+          <a
+            href="../index.html"
+            class="mission-card"
+          >
+
+            <div class="mission-id">
+              NODE_01
+            </div>
+
+            <h3>
+              HOME
+            </h3>
+
+            <p>
+              Return to the main command center.
+            </p>
+
+            <div class="mission-status">
+              <i class="status-dot"></i>
+              ACCESS NODE
+            </div>
+
+          </a>
+
+
+
+          <a
+            href="skills.html"
+            class="mission-card"
+          >
+
+            <div class="mission-id">
+              NODE_02
+            </div>
+
+            <h3>
+              SKILLS
+            </h3>
+
+            <p>
+              Explore the current technology and
+              development skill matrix.
+            </p>
+
+            <div class="mission-status">
+              <i class="status-dot"></i>
+              ACCESS NODE
+            </div>
+
+          </a>
+
+
+
+          <a
+            href="projects.html"
+            class="mission-card"
+          >
+
+            <div class="mission-id">
+              NODE_03
+            </div>
+
+            <h3>
+              PROJECTS
+            </h3>
+
+            <p>
+              Enter the classified project and
+              mission archive.
+            </p>
+
+            <div class="mission-status">
+              <i class="status-dot"></i>
+              ACCESS NODE
+            </div>
+
+          </a>
+
+
+
+          <a
+            href="terminal.html"
+            class="mission-card"
+          >
+
+            <div class="mission-id">
+              NODE_04
+            </div>
+
+            <h3>
+              TERMINAL
+            </h3>
+
+            <p>
+              Open the interactive portfolio terminal.
+            </p>
+
+            <div class="mission-status">
+              <i class="status-dot"></i>
+              ACCESS NODE
+            </div>
+
+          </a>
+
+
+
+          <a
+            href="contact.html"
+            class="mission-card"
+          >
+
+            <div class="mission-id">
+              NODE_05
+            </div>
+
+            <h3>
+              CONTACT
+            </h3>
+
+            <p>
+              Open a communication channel with Krishna.
+            </p>
+
+            <div class="mission-status">
+              <i class="status-dot"></i>
+              ACCESS NODE
+            </div>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+  <footer>
+
+    <div>
+      KRISHNA // SYSTEM
+    </div>
+
+    <div>
+      BEGINNER DEVELOPER // 2026
+    </div>
+
+    <div>
+      SYSTEM STATUS: ONLINE
+    </div>
+
+  </footer>
+
+
+
+  <!-- =====================================================
+       TOAST
+       ===================================================== -->
+
+  <div
+    id="toast"
+    class="toast"
+  ></div>
+
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+       ===================================================== -->
+
+  <script src="../script.js"></script>
+
+</body>
+
+</html>

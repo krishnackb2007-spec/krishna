@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Krishna Developer Terminal"
+  >
+
+  <title>KRISHNA // TERMINAL</title>
+
+  <link
+    rel="stylesheet"
+    href="../style.css"
+  >
+
+</head>
+
+
+<body>
+
+  <!-- =====================================================
+       BACKGROUND
+       ===================================================== -->
+
+  <canvas id="matrixCanvas"></canvas>
+
+  <canvas id="particleCanvas"></canvas>
+
+  <div class="scanlines"></div>
+
+
+
+  <!-- =====================================================
+       NAVIGATION
+       ===================================================== -->
+
+  <header class="topbar">
+
+    <a
+      href="../index.html"
+      class="logo"
+    >
+      KRISHNA // SYSTEM
+    </a>
+
+
+    <nav class="nav">
+
+      <a href="../index.html">
+        HOME
+      </a>
+
+      <a href="about.html">
+        ABOUT
+      </a>
+
+      <a href="skills.html">
+        SKILLS
+      </a>
+
+      <a href="projects.html">
+        PROJECTS
+      </a>
+
+      <a
+        href="terminal.html"
+        class="active"
+      >
+        TERMINAL
+      </a>
+
+      <a href="contact.html">
+        CONTACT
+      </a>
+
+    </nav>
+
+
+    <div
+      class="clock"
+      id="clock"
+    >
+      00:00:00
+    </div>
+
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      type="button"
+    >
+      ☰
+    </button>
+
+  </header>
+
+
+
+  <!-- =====================================================
+       DANGER MODE
+       ===================================================== -->
+
+  <button
+    id="dangerButton"
+    class="danger-button"
+    type="button"
+  >
+
+    ⚠ DANGER MODE
+
+    <br>
+
+    <span>
+      ● OFF
+    </span>
+
+  </button>
+
+
+  <div
+    id="dangerOverlay"
+    class="danger-overlay"
+  ></div>
+
+  <div id="dangerFlash"></div>
+
+
+
+  <!-- =====================================================
+       TERMINAL HERO
+       ===================================================== -->
+
+  <main>
+
+    <section
+      class="terminal-hero"
+      id="terminalHero"
+    >
+
+      <div class="terminal-hero-grid"></div>
+
+
+      <div class="terminal-hero-content">
+
+        <div class="terminal-alert">
+          TERMINAL ACCESS // AUTHORIZED
+        </div>
+
+
+        <div class="terminal-kicker">
+          KRISHNA // COMMAND INTERFACE
+        </div>
+
+
+        <h1>
+          SYSTEM TERMINAL
+        </h1>
+
+
+        <p>
+          TYPE A COMMAND TO ACCESS THE DEVELOPER SYSTEM
+        </p>
+
+
+        <div class="terminal-status-line">
+
+          <span>
+            SYSTEM
+          </span>
+
+          <strong>
+            ONLINE
+          </strong>
+
+          <span>
+            USER
+          </span>
+
+          <strong>
+            KRISHNA
+          </strong>
+
+          <span>
+            ACCESS
+          </span>
+
+          <strong>
+            AUTHORIZED
+          </strong>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         MAIN TERMINAL
+         =================================================== -->
+
+    <section
+      id="commandTerminal"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 01 ] // COMMAND LINE
+          </div>
+
+          <h2 class="section-title">
+            KRISHNA COMMAND TERMINAL
+          </h2>
+
+          <div class="section-subtitle">
+            INTERACTIVE DEVELOPER SYSTEM
+          </div>
+
+        </div>
+
+
+
+        <div class="real-terminal">
+
+
+          <!-- TERMINAL HEADER -->
+
+          <div class="real-terminal-header">
+
+            <div class="terminal-window-title">
+
+              <span class="terminal-light"></span>
+              <span class="terminal-light"></span>
+              <span class="terminal-light"></span>
+
+              KRISHNA@SYSTEM
+
+            </div>
+
+
+            <div class="terminal-header-status">
+              ● ONLINE
+            </div>
+
+          </div>
+
+
+
+          <!-- TERMINAL BODY -->
+
+          <div
+            class="real-terminal-body"
+            id="terminalOutput"
+          >
+
+            <div class="terminal-line">
+              KRISHNA SYSTEM TERMINAL v1.0
+            </div>
+
+            <div class="terminal-line">
+              Copyright 2026 // Developer Interface
+            </div>
+
+            <br>
+
+            <div class="terminal-line success">
+              [OK] SYSTEM INITIALIZED
+            </div>
+
+            <div class="terminal-line success">
+              [OK] USER AUTHENTICATED
+            </div>
+
+            <div class="terminal-line success">
+              [OK] PROJECT DATABASE CONNECTED
+            </div>
+
+            <div class="terminal-line success">
+              [OK] SKILL DATABASE CONNECTED
+            </div>
+
+            <br>
+
+            <div class="terminal-line">
+              Type <strong>help</strong> to display available commands.
+            </div>
+
+            <div class="terminal-line">
+              This terminal is a visual simulation.
+            </div>
+
+            <br>
+
+          </div>
+
+
+
+          <!-- COMMAND INPUT -->
+
+          <form
+            class="terminal-input-area"
+            id="terminalForm"
+          >
+
+            <span class="terminal-user">
+              krishna@system:~$
+            </span>
+
+
+            <input
+              type="text"
+              id="terminalInput"
+              autocomplete="off"
+              spellcheck="false"
+              placeholder="type command..."
+              aria-label="Terminal command"
+            >
+
+
+            <button
+              type="submit"
+              class="terminal-execute"
+            >
+              ENTER
+            </button>
+
+          </form>
+
+        </div>
+
+
+
+        <!-- COMMAND HELP -->
+
+        <div class="command-list">
+
+          <div class="command-box">
+
+            <span>
+              help
+            </span>
+
+            <small>
+              Show available commands
+            </small>
+
+          </div>
+
+
+          <div class="command-box">
+
+            <span>
+              about
+            </span>
+
+            <small>
+              Open Krishna profile
+            </small>
+
+          </div>
+
+
+          <div class="command-box">
+
+            <span>
+              skills
+            </span>
+
+            <small>
+              Open skill matrix
+            </small>
+
+          </div>
+
+
+          <div class="command-box">
+
+            <span>
+              projects
+            </span>
+
+            <small>
+              Open project database
+            </small>
+
+          </div>
+
+
+          <div class="command-box">
+
+            <span>
+              status
+            </span>
+
+            <small>
+              Display system status
+            </small>
+
+          </div>
+
+
+          <div class="command-box">
+
+            <span>
+              contact
+            </span>
+
+            <small>
+              Open communication channel
+            </small>
+
+          </div>
+
+
+          <div class="command-box">
+
+            <span>
+              home
+            </span>
+
+            <small>
+              Return to main system
+            </small>
+
+          </div>
+
+
+          <div class="command-box">
+
+            <span>
+              clear
+            </span>
+
+            <small>
+              Clear terminal
+            </small>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         SYSTEM STATUS
+         =================================================== -->
+
+    <section
+      id="terminalStatus"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 02 ] // STATUS
+          </div>
+
+          <h2 class="section-title">
+            SYSTEM STATUS
+          </h2>
+
+          <div class="section-subtitle">
+            LIVE DEVELOPMENT ENVIRONMENT
+          </div>
+
+        </div>
+
+
+
+        <div class="status-grid">
+
+
+          <div class="status-card">
+
+            <div class="label">
+              SYSTEM
+            </div>
+
+            <div class="value">
+              <i class="status-dot"></i>
+              ONLINE
+            </div>
+
+          </div>
+
+
+          <div class="status-card">
+
+            <div class="label">
+              NETWORK
+            </div>
+
+            <div class="value">
+              <i class="status-dot"></i>
+              SECURE
+            </div>
+
+          </div>
+
+
+          <div class="status-card">
+
+            <div class="label">
+              DATABASE
+            </div>
+
+            <div class="value">
+              <i class="status-dot"></i>
+              ONLINE
+            </div>
+
+          </div>
+
+
+          <div class="status-card">
+
+            <div class="label">
+              TERMINAL
+            </div>
+
+            <div class="value">
+              <i class="status-dot"></i>
+              READY
+            </div>
+
+          </div>
+
+
+          <div class="status-card">
+
+            <div class="label">
+              MODE
+            </div>
+
+            <div class="value">
+              <i class="status-dot"></i>
+              LEARNING
+            </div>
+
+          </div>
+
+
+          <div class="status-card">
+
+            <div class="label">
+              THREAT LEVEL
+            </div>
+
+            <div class="value">
+              <i class="status-dot"></i>
+              LOW
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         TERMINAL LOG
+         =================================================== -->
+
+    <section
+      id="terminalLog"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 03 ] // LOG
+          </div>
+
+          <h2 class="section-title">
+            SYSTEM LOG
+          </h2>
+
+          <div class="section-subtitle">
+            DEVELOPMENT ACTIVITY
+          </div>
+
+        </div>
+
+
+
+        <div class="log-panel">
+
+          <div>
+            <span>
+              [2026]
+            </span>
+            SYSTEM CREATED
+          </div>
+
+          <div>
+            <span>
+              [2026]
+            </span>
+            WEB DEVELOPMENT INITIALIZED
+          </div>
+
+          <div>
+            <span>
+              [2026]
+            </span>
+            HTML MODULE ACTIVE
+          </div>
+
+          <div>
+            <span>
+              [2026]
+            </span>
+            CSS MODULE ACTIVE
+          </div>
+
+          <div>
+            <span>
+              [2026]
+            </span>
+            JAVASCRIPT MODULE ACTIVE
+          </div>
+
+          <div>
+            <span>
+              [2026]
+            </span>
+            SQL LEARNING ACTIVE
+          </div>
+
+          <div>
+            <span>
+              [2026]
+            </span>
+            PYTHON LEARNING ACTIVE
+          </div>
+
+          <div>
+            <span>
+              [2026]
+            </span>
+            C++ LEARNING ACTIVE
+          </div>
+
+          <div>
+            <span>
+              [LIVE]
+            </span>
+            SYSTEM CONTINUES TO EVOLVE
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         TERMINAL MESSAGE
+         =================================================== -->
+
+    <section
+      id="terminalMessage"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+
+        <div class="terminal-message">
+
+          <div class="terminal-message-title">
+            &gt; SYSTEM MESSAGE
+          </div>
+
+
+          <p>
+            This terminal is an interactive visual interface
+            created for the Krishna developer portfolio.
+          </p>
+
+
+          <p>
+            The commands are simulated frontend actions.
+            No real system commands or network operations
+            are executed.
+          </p>
+
+
+          <strong>
+            LEARN // BUILD // DEBUG // EVOLVE
+          </strong>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ===================================================
+         ACCESS OTHER NODES
+         =================================================== -->
+
+    <section
+      id="connection"
+      class="reveal"
+    >
+
+      <div class="section-container">
+
+
+        <div class="section-header">
+
+          <div class="section-number">
+            [ 04 ] // CONNECTION
+          </div>
+
+          <h2 class="section-title">
+            ACCESS OTHER NODES
+          </h2>
+
+          <div class="section-subtitle">
+            NAVIGATION // SYSTEM MODULES
+          </div>
+
+        </div>
+
+
+
+        <div class="status-grid">
+
+
+          <a
+            href="../index.html"
+            class="status-card"
+          >
+
+            <div class="label">
+              NODE_01
+            </div>
+
+            <div class="value">
+              HOME
+            </div>
+
+          </a>
+
+
+          <a
+            href="about.html"
+            class="status-card"
+          >
+
+            <div class="label">
+              NODE_02
+            </div>
+
+            <div class="value">
+              ABOUT
+            </div>
+
+          </a>
+
+
+          <a
+            href="skills.html"
+            class="status-card"
+          >
+
+            <div class="label">
+              NODE_03
+            </div>
+
+            <div class="value">
+              SKILLS
+            </div>
+
+          </a>
+
+
+          <a
+            href="projects.html"
+            class="status-card"
+          >
+
+            <div class="label">
+              NODE_04
+            </div>
+
+            <div class="value">
+              PROJECTS
+            </div>
+
+          </a>
+
+
+          <a
+            href="contact.html"
+            class="status-card"
+          >
+
+            <div class="label">
+              NODE_05
+            </div>
+
+            <div class="value">
+              CONTACT
+            </div>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+  <footer class="site-footer">
+
+    <div>
+      KRISHNA // COMMAND TERMINAL
+    </div>
+
+    <div>
+      SYSTEM ONLINE // 2026
+    </div>
+
+  </footer>
+
+
+
+  <!-- =====================================================
+       TERMINAL SCRIPT
+       ===================================================== -->
+
+  <script src="../script.js"></script>
+
+
+  <script>
+
+    /* =====================================================
+       KRISHNA TERMINAL
+       Visual simulation only
+       ===================================================== */
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      function () {
+
+        const form =
+          document.getElementById("terminalForm");
+
+        const input =
+          document.getElementById("terminalInput");
+
+        const output =
+          document.getElementById("terminalOutput");
+
+
+        if (!form || !input || !output) {
+          return;
+        }
+
+
+        function printLine(
+          text,
+          type = ""
+        ) {
+
+          const line =
+            document.createElement("div");
+
+          line.className =
+            "terminal-line " + type;
+
+          line.innerHTML = text;
+
+          output.appendChild(line);
+
+          output.scrollTop =
+            output.scrollHeight;
+
+        }
+
+
+        function executeCommand(command) {
+
+          const cmd =
+            command
+              .trim()
+              .toLowerCase();
+
+
+          if (!cmd) {
+            return;
+          }
+
+
+          printLine(
+            "krishna@system:~$ " +
+            command
+          );
+
+
+          switch (cmd) {
+
+
+            case "help":
+
+              printLine(
+                "AVAILABLE COMMANDS:",
+                "success"
+              );
+
+              printLine(
+                "about      → Open Krishna profile"
+              );
+
+              printLine(
+                "skills     → Open skill matrix"
+              );
+
+              printLine(
+                "projects   → Open project database"
+              );
+
+              printLine(
+                "status     → Display system status"
+              );
+
+              printLine(
+                "contact    → Open communication channel"
+              );
+
+              printLine(
+                "home       → Return to home"
+              );
+
+              printLine(
+                "clear      → Clear terminal"
+              );
+
+              printLine(
+                "danger     → Activate visual danger mode"
+              );
+
+              break;
+
+
+
+            case "about":
+
+              printLine(
+                "Opening developer profile...",
+                "success"
+              );
+
+              setTimeout(
+                function () {
+                  window.location.href =
+                    "about.html";
+                },
+                500
+              );
+
+              break;
+
+
+
+            case "skills":
+
+              printLine(
+                "Loading skill matrix...",
+                "success"
+              );
+
+              setTimeout(
+                function () {
+                  window.location.href =
+                    "skills.html";
+                },
+                500
+              );
+
+              break;
+
+
+
+            case "projects":
+
+              printLine(
+                "Opening project database...",
+                "success"
+              );
+
+              setTimeout(
+                function () {
+                  window.location.href =
+                    "projects.html";
+                },
+                500
+              );
+
+              break;
+
+
+
+            case "status":
+
+              printLine(
+                "SYSTEM       : ONLINE",
+                "success"
+              );
+
+              printLine(
+                "NETWORK      : SECURE"
+              );
+
+              printLine(
+                "DATABASE     : ONLINE"
+              );
+
+              printLine(
+                "MODE         : LEARNING"
+              );
+
+              printLine(
+                "THREAT LEVEL : LOW"
+              );
+
+              printLine(
+                "USER         : KRISHNA"
+              );
+
+              break;
+
+
+
+            case "contact":
+
+              printLine(
+                "Opening communication channel...",
+                "success"
+              );
+
+              setTimeout(
+                function () {
+                  window.location.href =
+                    "contact.html";
+                },
+                500
+              );
+
+              break;
+
+
+
+            case "home":
+
+              printLine(
+                "Returning to main system...",
+                "success"
+              );
+
+              setTimeout(
+                function () {
+                  window.location.href =
+                    "../index.html";
+                },
+                500
+              );
+
+              break;
+
+
+
+            case "clear":
+
+              output.innerHTML = "";
+
+              break;
+
+
+
+            case "danger":
+
+              printLine(
+                "VISUAL DANGER MODE ACTIVATED",
+                "danger-text"
+              );
+
+              const dangerButton =
+                document.getElementById(
+                  "dangerButton"
+                );
+
+              if (dangerButton) {
+                dangerButton.click();
+              }
+
+              break;
+
+
+
+            case "whoami":
+
+              printLine(
+                "KRISHNA // BEGINNER DEVELOPER",
+                "success"
+              );
+
+              printLine(
+                "FIELD : WEB DEVELOPMENT"
+              );
+
+              printLine(
+                "STARTED : 2026"
+              );
+
+              break;
+
+
+
+            case "date":
+
+              printLine(
+                new Date().toLocaleString()
+              );
+
+              break;
+
+
+
+            default:
+
+              printLine(
+                "COMMAND NOT FOUND: " +
+                command,
+                "danger-text"
+              );
+
+              printLine(
+                "Type 'help' for available commands."
+              );
+
+          }
+
+        }
+
+
+        form.addEventListener(
+          "submit",
+          function (event) {
+
+            event.preventDefault();
+
+            const command =
+              input.value;
+
+            executeCommand(command);
+
+            input.value = "";
+
+          }
+        );
+
+
+        document.addEventListener(
+          "keydown",
+          function (event) {
+
+            if (
+              event.key === "/" &&
+              document.activeElement !== input
+            ) {
+
+              event.preventDefault();
+
+              input.focus();
+
+            }
+
+          }
+        );
+
+
+      }
+    );
+
+  </script>
+
+
+</body>
+
+</html>

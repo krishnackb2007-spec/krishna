@@ -5326,3 +5326,246 @@ body.danger .instagram-icon{
   }
 
 }
+/* =========================================================
+   FINAL MOBILE FIX
+   ========================================================= */
+
+html,
+body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+img,
+canvas,
+video,
+svg{
+  max-width:100%;
+}
+
+@media(max-width:700px){
+
+  *{
+    max-width:100%;
+  }
+
+  .topbar{
+    width:100%;
+    max-width:100%;
+    padding:0 12px;
+  }
+
+  .logo{
+    max-width:65%;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+  }
+
+  .nav{
+    width:100%;
+    max-width:100%;
+  }
+
+  .hero{
+    width:100%;
+    max-width:100%;
+    padding-left:16px;
+    padding-right:16px;
+    overflow:hidden;
+  }
+
+  .hero-content{
+    width:100%;
+    max-width:100%;
+  }
+
+  .welcome-small,
+  .welcome-title,
+  .hero-tagline{
+    max-width:100%;
+    overflow-wrap:anywhere;
+  }
+
+  .welcome-title{
+    font-size:clamp(38px,13vw,58px);
+    letter-spacing:2px;
+    line-height:.95;
+    word-break:break-word;
+  }
+
+  .krishna-box{
+    width:100%;
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:16px;
+    overflow:hidden;
+  }
+
+  .krishna-name{
+    font-size:clamp(24px,8vw,34px);
+    letter-spacing:4px;
+    overflow-wrap:anywhere;
+  }
+
+  .krishna-role{
+    font-size:9px;
+    line-height:1.7;
+    letter-spacing:1px;
+    overflow-wrap:anywhere;
+  }
+
+  .initializing,
+  .hero-terminal{
+    width:100%;
+    max-width:100%;
+    overflow:hidden;
+  }
+
+  .init-line{
+    gap:10px;
+    flex-wrap:wrap;
+  }
+
+  .hero-terminal{
+    padding-left:10px;
+    padding-right:10px;
+    overflow-wrap:anywhere;
+  }
+
+  .danger-section,
+  .modules,
+  .section,
+  .section-container{
+    width:calc(100% - 24px);
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .danger-card{
+    width:100%;
+    max-width:100%;
+    padding:20px 14px;
+    overflow:hidden;
+  }
+
+  .danger-card h2{
+    font-size:clamp(18px,6vw,25px);
+    letter-spacing:2px;
+  }
+
+  .danger-card p{
+    font-size:9px;
+    line-height:1.7;
+    letter-spacing:2px;
+    overflow-wrap:anywhere;
+  }
+
+  .module-card{
+    width:100%;
+    max-width:100%;
+    min-height:280px;
+    padding:30px 16px;
+    overflow:hidden;
+  }
+
+  .module-main{
+    width:100%;
+    max-width:100%;
+  }
+
+  .module-main h2{
+    font-size:clamp(25px,9vw,34px);
+    overflow-wrap:anywhere;
+  }
+
+  .module-main p,
+  .module-info{
+    overflow-wrap:anywhere;
+  }
+
+  .status-grid,
+  .skills-grid,
+  .mission-grid,
+  .missions-grid,
+  .about-grid,
+  .contact-grid,
+  .identity-grid{
+    width:100%;
+    max-width:100%;
+  }
+
+  .status-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hud-panel,
+  .terminal-window,
+  .skills-panel,
+  .mission-card,
+  .status-card,
+  .identity-panel{
+    width:100%;
+    max-width:100%;
+    overflow:hidden;
+  }
+
+  .section-title,
+  .section-header,
+  .section-subtitle{
+    max-width:100%;
+    overflow-wrap:anywhere;
+  }
+
+  footer{
+    width:100%;
+    max-width:100%;
+    padding-left:15px;
+    padding-right:15px;
+  }
+
+  /* Prevent long URLs / text from breaking layout */
+  a,
+  p,
+  span,
+  strong,
+  div{
+    overflow-wrap:anywhere;
+  }
+
+}
+
+/* Very small phones */
+@media(max-width:400px){
+
+  .welcome-title{
+    font-size:40px;
+  }
+
+  .welcome-small{
+    font-size:16px;
+    letter-spacing:3px;
+  }
+
+  .hero-tagline{
+    font-size:8px;
+    letter-spacing:2px;
+  }
+
+  .krishna-box{
+    padding:14px 12px;
+  }
+
+  .module-card{
+    padding:28px 14px;
+  }
+
+  .danger-toggle,
+  .danger-button{
+    max-width:calc(100vw - 20px);
+  }
+
+}
